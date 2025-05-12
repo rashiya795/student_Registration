@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Enroll</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-cyan-800">
+    <!-- adding a heading -->
+    <header class="text-center">
+        <h1 class="text-5xl font-semibold font-sans text-red-100">Smart Enroll </h1>
+        <p class="text-2xl text-gray-400 font-sans font-bold" >Your Student Registration Hub</p>
+        <p class="text-red-100">Register new students, manage their information, and simplify enrollment processes with ease.</p>
+
+    </header>
+
+    <div class="container flex mt-20 max-w-full ">
+     
+            <div class="addedInfo flex flex-col border border-black/40  max-w-9/12 ">
+             <h2>Registered Students</h2>
+
+            </div>
+        </section>
+
+
+        <div class="inputFields flex flex-col border border-black/40 w-full max-w-md mx-auto p-6 bg-cyan-700 rounded-md shadow-lg">
+
+
+<!-- 
+  Student Registration Form:
+  This form collects student details including name, student ID, email ID, and contact number.
+  All fields are required for submission.
+-->
+
+    <form class="flex flex-col  space-y-4">
+        <label class="text-red-100 text-lg" for="studentName">Student Name:</label>
+        <input class=" bg-red-100 p-2" type="text" id="studentName" name="studentName" placeholder="Enter your full name" required>
+        
+        <label class="text-red-100 text-lg"  for="studentId">Student Id:</label>
+        <input   class=" bg-red-100 p-2" type="text" id="studentId"name="studentId" placeholder="Enter student id" required>
+
+        <label  class="text-red-100 text-lg" for="emailid">Email id:</label>
+        <input  class=" bg-red-100 p-2" type="email" id="emailid" name="emailid" placeholder="xyz@gmail.com" required>
+
+        <label class="text-red-100 text-lg"  for="Contact">Contact No.:</label>
+        <input  class=" bg-red-100 p-2"  type="tel"  id="Contact" name="Contact" placeholder="Enter contact number" required>
+
+<button  class="bg-red-100 max-w-3/12" type="submit"  class="addDetails">Add</button>
+
+
+    </form>
+
+
+
+
+
+</div>
+    </div>
+</body>
+</html>

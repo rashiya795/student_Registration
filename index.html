@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Enroll</title>
+<link href="./index.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<!-- adding a heading -->
+<header class="heading">
+    <h1 class="h1-tag">Smart Enroll </h1>
+    <p id="para1">Your Student Registration Hub!!</p>
+    <p id="para2">Register new students, manage their information, and simplify enrollment processes with ease.</p>
+
+</header>
+
+<div class="container">
+     
+    <div class="addedInfo  ">
+     <h2>Registered Students</h2>
+
+<div class="table-div">
+    <div class="table-info">
+    <table border="1" cellpadding="10" cellspacing="0" class="tableDetails">
+        <tr>
+          <th class="table-heading">Student Name</th>
+          <th class="table-heading">Student ID</th>
+          <th class="table-heading">Email ID</th>
+          <th class="table-heading">Contact No.</th>
+          <th class="table-heading">Edit</th>
+          <th class="table-heading">Remove</th> 
+
+        </tr>
+        
+      </table>
+    </div>
+      <!-- <div class="editAndremove">
+        <button class="edit-button"><i class="fa-solid fa-pen"></i></button>  
+       
+       <button class="edit-button"> <i class="fa-solid fa-trash"></i></button>
+      </div> -->
+</div>
+
+     
+
+
+
+    </div>
+</section>
+
+
+<div class="inputFields">
+
+
+  <!-- Student Registration Form:
+  This form collects student details including name, student ID, email ID, and contact number.
+  All fields are required for submission. -->
+
+
+    <form class="studentForm">
+        <label  for="studentName">Student Name:</label>
+        <input  type="text" id="studentName" name="studentName" placeholder="Enter your full name" required>
+        <span id="name-error" class="error-message"></span>
+
+        <label  for="studentId">Student Id:</label>
+        <input    type="text" id="studentId"name="studentId" placeholder="Enter student id" required>
+        <span id="studentId-error" class="error-message"></span>
+
+        <label   for="emailid">Email id:</label>
+        <input   type="email" id="emailid" name="emailid" placeholder="xyz@gmail.com" required>
+        <span id="email-error" class="error-message"></span>
+
+        <label   for="Contact">Contact No.:</label>
+        <input    type="tel"  id="Contact" name="Contact" placeholder="Enter contact number" required>
+        <span id="contact-error" class="error-message"></span>
+
+<button   type="submit"  class="addDetails">Submit</button>
+
+
+    </form>
+
+
+
+
+
+</div>
+    </div>
+
+    <script src="./index.js" charset="UTF-8"></script>
+</body>
+</html>
